@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QUIZ</title>
+</head>
+<body>
+    <header>
+        <section class="testefundo">
+          <img src="imagens/testefundo.png" alt="">
+        </section>
+       
+        <nav>
+          <a href="index.html">PÁGINA INICIAL</a>
+          <a href="produtos.html">PRODUTOS</a>
+          <a href="contato.html">CONTATO</a>
+        </nav>
+    </header>
+
+    <section class="quiz-section">
+        <h2>Quiz de Conhecimentos Sobre Nossa Empresa</h2>
+        <form id="quiz-form">
+            <section class="question">
+                <h3>1. Quais produtos nossa empresa oferece?</h3>
+                <label><input type="radio" name="q1" value="A" onclick="disableOptions('q1'), playSound()"> A) Cuidados Capilares</label><br>
+                <label><input type="radio" name="q1" value="B" onclick="disableOptions('q1'), playSound()"> B) Produtos Alimenticios</label><br>
+                <label><input type="radio" name="q1" value="C" onclick="disableOptions('q1'), playSound()"> C) Eletrônicos</label><br>
+                <label><input type="radio" name="q1" value="D" onclick="disableOptions('q1'), playSound()"> D) Perfumes</label>
+            </section>
+
+            <section class="question">
+                <h3>2. Qual a missão da nossa empresa?</h3>
+                <label><input type="radio" name="q2" value="A" onclick="disableOptions('q2'), playSound()"> A) Nós queremos apenas vender nossos produtos</label><br>
+                <label><input type="radio" name="q2" value="B" onclick="disableOptions('q2'), playSound()"> B) Proporcionar as mesmas experiências </label><br>
+                <label><input type="radio" name="q2" value="C" onclick="disableOptions('q2'), playSound()"> C) Queremos que nossa empresa apenas fique famosa</label><br>
+                <label><input type="radio" name="q2" value="D" onclick="disableOptions('q2'), playSound()"> D) Proporcionar aos clientes produtos e experiências que promovam a saúde, a beleza e a confiança de seus cabelos</label>
+            </section>
+
+            <section class="question">
+                <h3>3. Qual a faixa de preço presente em nosso site?</h3>
+                <label><input type="radio" name="q3" value="A" onclick="disableOptions('q3'), playSound()"> A) R$100,00 - R$200,00</label><br>
+                <label><input type="radio" name="q3" value="B" onclick="disableOptions('q3'), playSound()"> B) R$200,00 - R$300,00</label><br>
+                <label><input type="radio" name="q3" value="C" onclick="disableOptions('q3'), playSound()"> C) R$300,00 - R$400,00</label><br>
+                <label><input type="radio" name="q3" value="D" onclick="disableOptions('q3'), playSound()"> D) R$400,00 - R$500,00</label>
+            </section>
+
+            <section class="question">
+                <h3>4. Qual é a frequência ideal para lavar o cabelo oleoso?</h3>
+                <label><input type="radio" name="q4" value="A" onclick="disableOptions('q4'), playSound()"> A) 1 vez na semana</label><br>
+                <label><input type="radio" name="q4" value="B" onclick="disableOptions('q4'), playSound()"> B) Diariamente</label><br>
+                <label><input type="radio" name="q4" value="C" onclick="disableOptions('q4'), playSound()"> C) A cada 2 dias</label><br>
+                <label><input type="radio" name="q4" value="D" onclick="disableOptions('q4'), playSound()"> D) A cada 15 dias</label>
+            </section>
+
+            <section class="question">
+                <h3>5. Qual dessas práticas pode ajudar a reduzir a quebra do cabelo?</h3>
+                <label><input type="radio" name="q5" value="A" onclick="disableOptions('q5'), playSound()"> A) Usar elásticos apertados</label><br>
+                <label><input type="radio" name="q5" value="B" onclick="disableOptions('q5'), playSound()"> B) Usar uma escova de cerdas macias</label><br>
+                <label><input type="radio" name="q5" value="C" onclick="disableOptions('q5'), playSound()"> C) Cortar as pontas a cada 6 meses</label><br>
+                <label><input type="radio" name="q5" value="D" onclick="disableOptions('q5'), playSound()"> D) Secar o cabelo com toalha agressivamente</label>
+            </section>
+
+            <section class="question">
+                <h3>6. Qual alimento é conhecido por ser benéfico para a saúde capilar?</h3>
+                <label><input type="radio" name="q6" value="A" onclick="disableOptions('q6'), playSound()"> A) Chocolate</label><br>
+                <label><input type="radio" name="q6" value="B" onclick="disableOptions('q6'), playSound()"> B) Batata frita</label><br>
+                <label><input type="radio" name="q6" value="C" onclick="disableOptions('q6'), playSound()"> C) Refrigerante</label><br>
+                <label><input type="radio" name="q6" value="D" onclick="disableOptions('q6'), playSound()"> D) Sala de frutas</label>
+            </section>
+
+            <section class="question">
+                <h3>7. Qual destes ingredientes é conhecido por fortalecer os fios?</h3>
+                <label><input type="radio" name="q7" value="A" onclick="disableOptions('q7'), playSound()"> A) Parabenos</label><br>
+                <label><input type="radio" name="q7" value="B" onclick="disableOptions('q7'), playSound()"> B) Fragrâncias artificiais
+                </label><br>
+                <label><input type="radio" name="q7" value="C" onclick="disableOptions('q7'), playSound()"> C) Óleo de argan</label><br>
+                <label><input type="radio" name="q7" value="D" onclick="disableOptions('q7'), playSound()"> D) Silicones</label>
+            </section>
+
+            <section class="question">
+                <h3>8. O que é mais eficaz para proteger o cabelo do calor de ferramentas como secadores e chapinhas?</h3>
+                <label><input type="radio" name="q8" value="A" onclick="disableOptions('q8'), playSound()"> A) Protetor térmico</label><br>
+                <label><input type="radio" name="q8" value="B" onclick="disableOptions('q8'), playSound()"> B) Creme de cabelo</label><br>
+                <label><input type="radio" name="q8" value="C" onclick="disableOptions('q8'), playSound()"> C) Água</label><br>
+                <label><input type="radio" name="q8" value="D" onclick="disableOptions('q8'), playSound()"> D) Óleo</label>
+            </section>
+
+            <section class="question">
+                <h3>9. Qual é o melhor tipo de pente para desembaraçar cabelos molhados? </h3>
+                <label><input type="radio" name="q9" value="A" onclick="disableOptions('q9'), playSound()"> A) Pente de dentes finos</label><br>
+                <label><input type="radio" name="q9" value="B" onclick="disableOptions('q9'), playSound()"> B)  Pente de dentes largos</label><br>
+                <label><input type="radio" name="q9" value="C" onclick="disableOptions('q9'), playSound()"> C) Escova de cerdas duras</label><br>
+                <label><input type="radio" name="q9" value="D" onclick="disableOptions('q9'), playSound()"> D) Escova de cerdas duras</label>
+            </section>
+
+            <section class="question">
+                <h3>10. Qual é a função principal de um shampoo anti-resíduo?</h3>
+                <label><input type="radio" name="q10" value="A" onclick="disableOptions('q10'), playSound()"> A) Proporcionar brilho</label><br>
+                <label><input type="radio" name="q10" value="B" onclick="disableOptions('q10'), playSound()"> B) Eliminar impurezas e acúmulo de produtos</label><br>
+                <label><input type="radio" name="q10" value="C" onclick="disableOptions('q10'), playSound()"> C)  Proteger contra o calor</label><br>
+                <label><input type="radio" name="q10" value="D" onclick="disableOptions('q10'), playSound()"> D) Hidratar os fios</label>
+            </section>
+           
+
+            <!--Repita a estrutura acima para as outras perguntas-->
+            <button type="button" onclick="submitQuiz()" id="enviar">Enviar Respostas</button>
+            <button onclick="responderNovamente()" id="reiniciar" disabled>Responder Novamente</button> 
+        </form>
+
+            <audio id="venceusom" src="som/venceu.mp3" preload="auto"></audio>
+            <audio id="selecionasom" src="som/seleciona.mp3" preload="auto"></audio>
+            <audio id="perdeusom" src="som/perdeu.mp3" preload="auto"></audio>
+
+        <section id="result"></section>
+    </section>
+
+        <script src="script.js"></script>
+
+        <footer class="fim"><a href="https://www.eudora.com.br/cabelos/?&utm_source=google&utm_medium=cpc&utm_campaign=G:EUD:Performance:Categoria:PSQ-Eudora-Cabelos&gad_source=1&gclid=Cj0KCQjwjNS3BhChARIsAOxBM6p4aRmYjYI375GsYlt-AmX7dD625BDRr_XZV9MHpQZonvw7HYoIXSYaAqlWEALw_wcB&gclsrc=aw.ds"  target="_blank">MASTER OF THREADS</a></footer>
+
+</body>
+</html>

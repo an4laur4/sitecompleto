@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --color-0: #FAE0E4;
+    --color-1: #F7CAD0;
+    --color-2: #F9BEC7;
+    --color-3: #FBB1BD;
+    --color-4: #FF99AC;
+    --color-5: #FF85A1;
+    --color-6: #FF7096;
+    --color-7: #FF5C8A;
+    --color-8: #FF477E;
+    --color-9: #FF0A54;
+    --fonte: "Playfair Display", serif;
+}
+
+
+body{
+    background: var(--color-7);
+}
+
+header{
+    background-color:rgb(240, 248, 255);
+    padding: 18px;
+    margin: 15px;
+    border-radius: 13px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 5px 5px 5px 5px rgb(99 86 86);
+}
+
+header img{
+    display: flex;
+    padding: 10px;
+}
+
+nav{
+    background: var(--color-2);
+    padding: 10px;
+    border-radius: 13px;
+    box-shadow: 5px 5px 5px 5px var(--color-7);
+    text-decoration: none;
+    transition: 3s;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+}
+
+nav a:hover{
+    background-color: var(--color-5);
+    transform: scale(1.1);
+    padding: 10px 30px 10px 30px;
+}
+
+h2{
+    font-family: var(--fonte);
+}
+
+
+main{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 12px;
+    margin: 19px;
+}
+
+.produto{
+    padding: 12px;
+    transform: scale(1.1);
+}
+
+.produto:hover{
+    transition: 0.8s;
+    border-radius: 8px;
+    margin: 9px;
+    padding: 8px;
+    box-shadow: var(--color-1);
+}
+
+section{
+    text-align: center;
+    margin: 17px;
+    padding: 1px;
+}
+
+section h2{
+    background-color: var(--color-2);
+    border-radius: 10px;
+}
+
+/* Informações de Contato */
+.inf{
+    padding: 17px;
+    margin: 1px;
+}
+
+/* Formulário do Cliente */
+.cliente{
+    background-color: #f0f8ff;
+    border-radius: 5px;
+    padding: 17px;
+}
+
+
+form fieldset{
+    border: none;
+}
+
+button{
+    display: block;
+    width: 10%;
+    padding: 4px;
+    background: var(--color-4);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1em;
+}
+
+.produ2{
+    margin: 12px;
+    padding: 12px;
+}
+
+button:hover{
+    background: var(--color-7);
+
+}
+
+.testefundo{
+    padding: 17px;
+    margin: 10px;
+}
+
+.audio{
+    background: var(--color-3);
+    border-radius: 9px;
+    padding: 2px;
+    width: 100%;
+}
+
+.quiz-section{
+    padding: 20px;
+    background: var(--color-2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    margin: auto; 
+    max-width: 700px;
+}
+
+.question{
+    text-align: justify;
+}
+
+.botao{
+    margin-right: auto;
+}
+
+#enviar{
+    width: 100%;
+    margin: 12px;
+}
+
+#reiniciar{
+    width: 100%;
+    margin: 12px;  
+}
+
+footer{
+    background: var(--color-2);
+    margin: 19px;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fim a{
+    text-decoration: none;
+}
+
+.fim a:hover{
+    background-color: var(--color-5);
+}
+
+
+
+
+textarea{
+    /* Para certificar-se que todos os campos de texto tem as mesmas configurações de fonte */
+    font: 1em sans-serif;
+ 
+    /* Para dar o mesmo tamanho a todos os campos de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ 
+    /* Para harmonizar o look & feel das bordas nos campos de texto */
+    border: 1px solid #999;
+}
+ 
+ 
+
+textarea:focus{
+    /* Dar um pouco de destaques nos elementos ativos */
+    border-color: #000;
+}
+ 
+textarea{
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label */
+    vertical-align: top;
+ 
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 10em;
+ 
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
